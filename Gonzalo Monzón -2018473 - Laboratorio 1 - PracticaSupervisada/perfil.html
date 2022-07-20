@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil</title>
+        <script src="https://kit.fontawesome.com/690ccd5702.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/navBar.css">
+        <link rel="stylesheet" href="./css/stylePerfil.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="menuEstatico">
+            <nav>
+                <label class="logo">AgendaWeb</label>
+                <ul>
+                    <li><a href="./contactos.html">Contactos</a></li>
+                    <li><a href="./favoritos.html">Favoritos</a></li>
+                    <li><a class="active" href="#">Perfil</a></li>
+                    <li><a href="./todolist.html">To Do List</a></li>
+                    <li><a href="./index.html">Salir</a></li>
+                </ul>
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </nav>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./img/fotoDePerfil.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Gonzalo Monzón</h2>
+                <div class="center">
+                    <div class="box">
+                        <h1>No. carnet</h1>
+                        <p>2018473</p>
+                        <h1>Sección</h1>
+                        <p>IN6AM(2)</p>
+                        <h1>Teléfono</h1>
+                        <p>12332111</p>
+                        <h1>Dirección</h2>
+                        <p>Zona 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

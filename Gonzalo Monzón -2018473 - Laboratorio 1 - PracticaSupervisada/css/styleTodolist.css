@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/toDo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.list{
+    position: relative;
+    background: #ffd7ab;
+    width: 450px;
+}
+
+.list h2{
+    background: #66280a;
+    color: #e6b68b;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.list ul{
+    position: relative;
+    padding: 20px;
+}
+
+
+.list ul li{
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solis rgba(0, 0, 0, 0.1);
+}
+ 
+.list ul li:last-child{
+    border-bottom: none;
+}
+
+.list ul li label{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list ul li label input{
+    visibility: hidden;
+    appearance: none;
+}
+
+.list ul li label p{
+    position: absolute;
+    color: #713112;
+}
+
+.list ul li label span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #713112;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li label span::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #713112;
+    border-bottom: 2px solid #713112;
+    transform: rotate(-45deg);
+}
+
+.list ul li label input:checked ~ p{
+    text-decoration: line-through;
+    color: #e6b68b;
+}
+
+.list ul li label input:checked ~ span{
+    background: #713112;
+    border: 1px solid #713112;
+}
+
+.list ul li label input:checked ~ span:before{
+    border-left: 2px solid #ffd7ab;
+    border-bottom: 2px solid #ffd7ab;
+}

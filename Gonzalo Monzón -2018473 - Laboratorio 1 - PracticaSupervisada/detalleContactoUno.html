@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Contacto</title>
+    <script src="https://kit.fontawesome.com/690ccd5702.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styleDetalleContacto.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="menuEstatico">
+        <nav>
+            <label class="logo">AgendaWeb</label>
+            <ul>
+                <li><a href="./contactos.html">Contactos</a></li>
+                <li><a href="./favoritos.html">Favoritos</a></li>
+                <li><a href="./perfil.html">Perfil</a></li>
+                <li><a href="./todolist.html">To Do List</a></li>
+                <li><a href="./index.html">Salir</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    </div>
+    <div class="contenedorPrincipal">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Dirección</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kenneth Alvaro</td>
+                    <td>Monzón Perez</td>
+                    <td>12366555</td>
+                    <td>kennethPerez@gmail.com</td>
+                    <td>Zona 15</td>
+                    <td>17</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

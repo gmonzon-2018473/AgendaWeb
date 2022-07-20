@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #9a5833;
+    background: linear-gradient(to right, #66280a, #9a5833);
+}
+
+.imgForm{
+    background-image: url(../img/agendaIndex.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#botonSesion{
+    background-color: #66280a;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    transition: .3s ease all;
+    border-radius: 10px;
+}
+
+
+#botonSesion:hover{
+    background-color: #9a5833;
+}
+
+.datos{
+    border-color: #66280a;
+    border-radius: 10px;
+    border-width: 2px;
+    color: #66280a;
+}
+
+label, h2{
+    color: #66280a;
+}

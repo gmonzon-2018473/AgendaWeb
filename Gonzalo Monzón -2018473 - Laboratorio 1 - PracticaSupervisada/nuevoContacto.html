@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contacto</title>
+    <script src="https://kit.fontawesome.com/690ccd5702.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styleNuevoContacto.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="menuEstatico">
+        <nav>
+            <label class="logo">AgendaWeb</label>
+            <ul>
+                <li><a href="./contactos.html">Contactos</a></li>
+                <li><a href="./favoritos.html">Favoritos</a></li>
+                <li><a href="./perfil.html">Perfil</a></li>
+                <li><a href="./todolist.html">To Do List</a></li>
+                <li><a href="./index.html">Salir</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    </div>
+    <section class="formContacto">
+        <h2>Nuevo contacto</h2>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellido">
+        <input class="controls" type="text" name="telefono" id="telefono" placeholder="Teléfono">
+        <input class="controls" type="text" name="correo" id="correo" placeholder="Correo">
+        <input class="controls" type="text" name="direccion" id="direccion" placeholder="Dirección">
+        <input class="controls" type="text" name="edad" id="edad" placeholder="Edad">
+        <form action="./contactos.html">
+            <input class="guardar" type="submit" value="Guardar contacto">
+        </form>
+    </section>
+</body>
+</html>
